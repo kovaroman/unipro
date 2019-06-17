@@ -7,3 +7,6 @@
 // - poller - check for elements on the page(return promise), takes one param - element class/id (.class or #id)
 // - emitCustomGoal - to emit goals(return promise), takes one param - goal name
 // - removeInterval - clean intervals
+
+import '../styles/normalize.css'
+import '../styles/index.scss'

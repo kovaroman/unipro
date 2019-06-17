@@ -22,11 +22,11 @@ Todo app with pure JS and local server.
 
 ##### To run your app with server:
 
-1. Make sure you installed Node.js.
+1. Make sure you installed Node.js (>= 8.2).
 2. Check that you have installed npm.
 3. Open project folder and run ```npm install```
-4. Start your local server with ```json-server --watch db.json```
-5. Open ```index.html```
+4. Start your local server with ```npm run start```
+5. Open ```http://localhost:8080/```
 6. Font family - 'Roboto'
 
 This task is simple, but we expect to see very clean and structured code with attention to details.
