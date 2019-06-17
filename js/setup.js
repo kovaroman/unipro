@@ -2,9 +2,9 @@
 // DO NOT CHANGE THIS FILE
 // =======================
 
-const randomDelay = () => Math.floor(Math.random() * 5)
+export const randomDelay = () => Math.floor(Math.random() * 5)
 
-const poller = el => {
+export const poller = el => {
   console.log('UNIPRO: poller')
   return new Promise((resolve, reject) => {
     const pollforEl = setInterval(() => {
@@ -20,7 +20,7 @@ const poller = el => {
   })
 }
 
-const emitCustomGoal = goal => {
+export const emitCustomGoal = goal => {
   return new Promise((resolve, reject) => {
     if (goal.toLowerCase() === 'completed' || goal.toLowerCase() === 'removed') {
       setTimeout(() => resolve(`UNIPRO: Goal "${goal}" has been incremented`), 500)
@@ -30,7 +30,7 @@ const emitCustomGoal = goal => {
   })
 }
 
-const removeInterval = intervalName => {
+export const removeInterval = intervalName => {
   console.log('UNIPRO: removeInterval', intervalName)
   clearInterval(intervalName)
 }

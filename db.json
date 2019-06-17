@@ -1,3 +1,7 @@
 {
-  "todos": []
+  "todos": [],
+  "statistics": {
+    "completed": 0,
+    "deleted": 0
+  }
 }
